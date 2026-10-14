@@ -86,9 +86,11 @@
   }
 
   projectGrid.addEventListener('click', (event) => {
-    const button = event.target.closest('[data-open-project]');
+    const card = event.target.closest('.project-card');
+    if (!card || !projectGrid.contains(card)) return;
+    const button = card.querySelector('[data-open-project]');
     if (!button) return;
-    const project = data.projects.find(p => p.id === button.dataset.openProject);
+    const project = data.projects.find(p => p.id === card.dataset.projectId);
     if (!project) return;
     lastOpener = button;
     dialogContent.innerHTML = detailHTML(project);
