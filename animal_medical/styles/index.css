@@ -197,3 +197,246 @@ footer img {width:400px; height:128.43px; margin-right:50px;}
 footer .right {}
 footer .right p {font-size:1rem; line-height:30px;}
 footer .right p:last-child {margin-top:15px;}
+
+
+/* 반응형: 태블릿 및 모바일 */
+@media (max-width: 1919px) {
+  body { min-width: 0; overflow-x: hidden; }
+  .title_bg {
+    height: auto;
+    min-height: 680px;
+    padding: clamp(64px, 7vw, 100px) clamp(32px, 10vw, 220px);
+    background-position: center;
+  }
+  .title_bg h1 img { width: clamp(90px, 8vw, 120px); margin-bottom: clamp(56px, 7vw, 100px); }
+  .title_bg .first_line { font-size: clamp(2.4rem, 4vw, 4rem); }
+  .title_bg .second_line,
+  .title_bg .second_line span { font-size: clamp(2rem, 3.5vw, 3.5rem); }
+  .title_bg .title_btm { width: 100%; gap: 24px; }
+  .title_bg .title_btm .icon { display: flex; gap: clamp(16px, 3vw, 56px); }
+  .title_bg .title_btm .icon img { width: clamp(110px, 13vw, 190px); height: auto; margin: 0; }
+
+  .info_1 {
+    height: auto;
+    min-height: 220px;
+    padding: 36px clamp(24px, 7vw, 130px);
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .info_1 .left .number { font-size: clamp(2rem, 3vw, 3.125rem); }
+  .info_1 .right { line-height: 1.7; }
+  .info_1 .right * { font-size: clamp(1rem, 1.25vw, 1.5rem); line-height: inherit; }
+
+  .intro { height: auto; padding: 48px clamp(24px, 6vw, 100px); }
+  .intro .intro_title .bg { width: min(480px, 100%); transform: none; margin: 0 auto; background-size: contain; }
+  .intro .intro_title p { font-size: clamp(1rem, 1.25vw, 1.5rem); line-height: 1.8; }
+  .intro .intro_bnr_wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .intro .intro_bnr_wrap a { width: auto; height: auto; margin: 0; min-width: 0; }
+  .intro .intro_bnr_wrap a .photo { height: clamp(230px, 27vw, 400px); background-position: center; background-size: cover; }
+  .intro .intro_bnr_wrap a .intro_txt { height: auto; min-height: 200px; padding: 24px; }
+  .intro .intro_bnr_wrap a .intro_txt p { line-height: 1.7; }
+
+  .video_center {
+    height: auto;
+    min-height: 650px;
+    padding: 110px 8vw;
+    background-position: center;
+    background-size: cover;
+  }
+  .video_center span { font-size: clamp(2rem, 4vw, 4rem); }
+  .video_center .h2_bg { width: fit-content; max-width: 100%; height: auto; padding: 12px 24px; }
+  .video_center .h2_bg h2 { font-size: clamp(2rem, 4vw, 4rem); }
+  .video_center p { font-size: clamp(1rem, 1.4vw, 1.5rem); line-height: 1.8; }
+  .video_center p em { font-size: inherit; }
+
+  .hour24 { height: auto; min-height: 220px; padding: 36px 12vw; gap: 36px; }
+  .hour24 span { font-size: clamp(1rem, 1.4vw, 1.5rem); line-height: 1.8; }
+  .hour24 span em { font-size: inherit; }
+
+  .data {
+    height: auto;
+    padding: 100px clamp(32px, 7vw, 110px);
+    gap: 36px;
+  }
+  .data .left { margin-right: 0; }
+  .data .right { min-width: 0; width: min(100%, 800px); }
+  .data .right .top { padding: 36px 24px; }
+  .data .right .btm { width: 100%; gap: 24px; }
+  .data .right .btm > div { min-width: 0; }
+  .data .right .btm > div p:last-child { width: auto; line-height: 1.6; }
+
+  .medical_center { height: auto; padding-bottom: 56px; }
+  .medical_center .center_title { margin: 72px 20px 42px; }
+  .medical_center .center_title img { max-width: 100%; height: auto; }
+  .medical_center .tab_title { display: flex; overflow-x: auto; white-space: nowrap; padding: 0 24px; }
+  .medical_center .tab_title a { flex: 0 0 auto; padding: 16px 26px; font-size: 1rem; }
+  .medical_center .tab_contents > div { height: 620px; }
+  .medical_center .tab_contents > div > .txt { width: 45%; padding: 56px 32px; }
+  .medical_center .tab_contents > div > .txt p:nth-of-type(2) { line-height: 1.7; }
+
+  .cat {
+    height: auto;
+    min-height: 650px;
+    padding: 120px 12vw;
+    background-position: center;
+    background-size: cover;
+  }
+  .cat span { font-size: clamp(2rem, 4vw, 4rem); }
+  .cat .h2_bg { width: fit-content; max-width: 100%; height: auto; padding: 12px 24px; }
+  .cat .h2_bg h2 { font-size: clamp(2rem, 4vw, 4rem); }
+  .cat p { font-size: clamp(1rem, 1.4vw, 1.5rem); line-height: 1.8; }
+
+  .location { height: auto; min-height: 560px; }
+  .location .left { width: 56%; min-width: 0; }
+  .location .left #map { height: 560px; }
+  .location .left .ad img { width: min(80%, 400px); height: auto; }
+  .location .right { flex: 1; min-width: 0; padding: 60px 24px; }
+  .location .right h3 { font-size: clamp(1.8rem, 3vw, 3rem); }
+  .location .right p { font-size: clamp(1.2rem, 2vw, 2rem); line-height: 1.5; margin: 28px 0; }
+  .location .right dl { margin: 16px 0; gap: 8px; }
+  .location .right dl > * { font-size: clamp(1rem, 1.4vw, 1.5rem); }
+
+  .reservation_frm { height: auto; padding: 40px clamp(24px, 7vw, 120px); }
+  .reservation_frm .txt_frm fieldset { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .reservation_frm .txt_frm fieldset input,
+  .reservation_frm .txt_frm fieldset input:nth-of-type(2),
+  .reservation_frm .txt_frm fieldset input:nth-of-type(3) { width: 100%; min-width: 0; margin: 0; }
+  .reservation_frm .txt_frm fieldset input:nth-of-type(3) { grid-column: span 2; }
+  .reservation_frm .txt_frm fieldset .btn { width: 100%; min-width: 0; margin: 0; }
+
+  footer { height: auto; min-height: 180px; padding: 36px clamp(24px, 6vw, 80px); gap: 24px; }
+  footer img { width: min(300px, 32vw); height: auto; margin: 0; }
+  footer .right { min-width: 0; }
+  footer .right p { line-height: 1.7; }
+  .quick_btn_wrap { right: clamp(16px, 3vw, 50px); bottom: 24px; }
+}
+
+@media (max-width: 1200px) {
+  .info_1 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .info_1 .right { grid-column: 1 / -1; }
+  .intro .intro_bnr_wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .data { display: grid; grid-template-columns: 1fr; text-align: center; }
+  .data .left { margin: 0; }
+  .data .left h3 { margin-bottom: 24px; }
+  .medical_center .tab_contents > div { min-height: 520px; height: 62vw; max-height: 620px; }
+  .medical_center .tab_contents > div > .txt { width: 48%; padding: 48px 28px; }
+  .location .left { width: 52%; }
+  .location .left #map { height: 520px; }
+}
+
+@media (max-width: 767px) {
+  .quick_btn_wrap { right: 14px; bottom: 14px; }
+  .quick_btn_wrap a img { width: 44px; height: 44px; }
+
+  .title_bg { min-height: 600px; padding: 52px 22px 38px; display: flex; flex-direction: column; justify-content: center; }
+  .title_bg h1 img { width: 88px; margin-bottom: 56px; }
+  .title_bg .first_line { font-size: 2.1rem; }
+  .title_bg .second_line,
+  .title_bg .second_line span { font-size: 1.65rem; line-height: 1.35; }
+  .title_bg .second_line { margin: 22px 0 42px; }
+  .title_bg .title_btm { align-items: flex-start; flex-direction: column; gap: 18px; }
+  .title_bg .title_btm > img { width: clamp(120px, 36vw, 180px); height: auto; }
+  .title_bg .title_btm .icon { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .title_bg .title_btm .icon img { width: 100%; max-width: 105px; height: auto; }
+
+  .info_1 { display: flex; flex-direction: column; align-items: flex-start; padding: 30px 22px; gap: 22px; }
+  .info_1 .left img { width: 38px; height: 38px; margin-right: 12px; }
+  .info_1 .left .number { font-size: 2rem; }
+  .info_1 .mid span { font-size: 1rem; }
+  .info_1 .mid dl { margin: 12px 0 0; }
+  .info_1 .mid dl > * { font-size: 0.9rem; line-height: 1.5; }
+  .info_1 .mid dl dt { margin-right: 8px; }
+  .info_1 .right,
+  .info_1 .right * { font-size: 0.9rem; line-height: 1.7; }
+  .info_1 br { display: none; }
+
+  .intro { padding: 36px 18px; }
+  .intro .intro_title { margin-bottom: 28px; }
+  .intro .intro_title .bg { height: 58px; }
+  .intro .intro_title p { font-size: 0.9rem; line-height: 1.75; }
+  .intro .intro_title p br { display: none; }
+  .intro .intro_bnr_wrap { grid-template-columns: 1fr; gap: 16px; }
+  .intro .intro_bnr_wrap a { width: min(100%, 480px); margin: 0 auto; }
+  .intro .intro_bnr_wrap a .photo { height: 250px; }
+  .intro .intro_bnr_wrap a .intro_txt { min-height: 0; padding: 22px; }
+  .intro .intro_bnr_wrap a .intro_txt h2 { font-size: 1.1rem; }
+  .intro .intro_bnr_wrap a .intro_txt p { font-size: 0.9rem; line-height: 1.7; margin-top: 12px; }
+  .intro .intro_bnr_wrap a .intro_txt br { display: none; }
+
+  .video_center { min-height: 0; padding: 68px 20px; text-align: center; }
+  .video_center span { font-size: 1.2rem; line-height: 1.5; }
+  .video_center .h2_bg { margin: 22px auto 28px; padding: 10px 16px; }
+  .video_center .h2_bg h2 { font-size: 1.7rem; }
+  .video_center p,
+  .video_center p em { font-size: 0.9rem; line-height: 1.75; }
+  .video_center p br { display: none; }
+
+  .hour24 { min-height: 0; padding: 32px 20px; flex-direction: column; justify-content: center; gap: 18px; text-align: center; }
+  .hour24 img { width: 90px; height: 90px; }
+  .hour24 span,
+  .hour24 span em { font-size: 0.9rem; line-height: 1.7; }
+  .hour24 br { display: none; }
+
+  .data { padding: 54px 20px; gap: 30px; }
+  .data .left h3 { font-size: 1.35rem; margin-bottom: 16px; }
+  .data .left p { font-size: 0.9rem; line-height: 1.7; }
+  .data .left p br { display: none; }
+  .data .right .top { padding: 24px 12px; }
+  .data .right .top > p { font-size: 0.95rem; }
+  .data .right .top > p em { font-size: 2.5rem; }
+  .data .right .btm { display: grid; grid-template-columns: 1fr; gap: 22px; padding-top: 24px; }
+  .data .right .btm > div .title { margin-bottom: 8px; }
+  .data .right .btm > div .title em { font-size: 2.2rem; }
+  .data .right .btm > div p { font-size: 0.9rem; line-height: 1.6; }
+
+  .medical_center { padding-bottom: 36px; }
+  .medical_center .center_title { margin: 48px 18px 28px; }
+  .medical_center .center_title img { width: min(100%, 340px); }
+  .medical_center .center_title h2 { font-size: 1.7rem; }
+  .medical_center .tab_title { padding: 0 16px; }
+  .medical_center .tab_title a { padding: 13px 16px; font-size: 0.85rem; }
+  .medical_center .tab_contents > div { height: auto; min-height: 500px; }
+  .medical_center .tab_contents > div > .txt { top: auto; bottom: 0; width: 100%; height: auto; padding: 24px 18px; background: rgba(107, 140, 157, 0.94); }
+  .medical_center .tab_contents > div > .txt h3 { font-size: 1.3rem; }
+  .medical_center .tab_contents > div > .txt p:nth-of-type(1) { font-size: 1rem; margin: 14px 0; }
+  .medical_center .tab_contents > div > .txt p:nth-of-type(2) { font-size: 0.85rem; line-height: 1.6; }
+  .medical_center .tab_contents > div > .txt p br { display: none; }
+  .medical_center .tab_contents > div > .txt a { margin-top: 18px; padding: 12px 16px; }
+
+  .cat { min-height: 540px; padding: 70px 20px; text-align: center; }
+  .cat span { font-size: 1.2rem; line-height: 1.5; }
+  .cat .h2_bg { margin: 24px auto 28px; padding: 10px 16px; }
+  .cat .h2_bg h2 { font-size: 1.65rem; }
+  .cat p { font-size: 0.9rem; line-height: 1.75; }
+  .cat p br { display: none; }
+
+  .location { min-height: 0; flex-direction: column; }
+  .location .left { width: 100%; }
+  .location .left #map { height: 280px; }
+  .location .left .ad img { width: min(82%, 360px); top: 22px; right: 9%; }
+  .location .right { width: 100%; padding: 32px 22px; }
+  .location .right h3 { font-size: 1.8rem; }
+  .location .right h3 img { width: 34px; height: 34px; }
+  .location .right p { font-size: 1.1rem; margin: 20px 0; }
+  .location .right dl { margin: 12px 0; }
+  .location .right dl > * { font-size: 0.9rem; line-height: 1.6; }
+  .location .right dl dt { margin-right: 10px; }
+  .location .right span { font-size: 0.8rem; padding: 12px 0 0; }
+
+  .reservation_frm { padding: 30px 18px; }
+  .reservation_frm > p { font-size: 1rem; }
+  .reservation_frm .txt_frm { margin: 20px 0; }
+  .reservation_frm .txt_frm fieldset { grid-template-columns: 1fr; gap: 8px; }
+  .reservation_frm .txt_frm fieldset input,
+  .reservation_frm .txt_frm fieldset input:nth-of-type(2),
+  .reservation_frm .txt_frm fieldset input:nth-of-type(3),
+  .reservation_frm .txt_frm fieldset .btn { grid-column: 1; width: 100%; height: 44px; }
+  .reservation_frm .agree_wrap label span { font-size: 0.85rem; }
+  .reservation_frm .agree_wrap a { padding: 8px 12px; font-size: 0.85rem; }
+
+  footer { min-height: 0; flex-direction: column; padding: 30px 18px; text-align: center; gap: 18px; }
+  footer img { width: min(220px, 70vw); }
+  footer .right p { font-size: 0.7rem; line-height: 1.65; word-break: keep-all; }
+  footer .right p br { display: none; }
+}
+
