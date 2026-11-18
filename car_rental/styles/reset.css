@@ -1,0 +1,24 @@
+/* local or web(@import) 글꼴 작성위치 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
+* {box-sizing:border-box;}
+html,body,
+h1,h2,h3,h4,h5,h6,p,blockquote,address,
+span,strong,em,q,sub,sup,del,s,a,img,
+div,header,nav,aside,main,footer,
+article,figure,figcaption,section,video,
+table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd,
+form,fieldset,legend,input,select,option,button,label,textarea {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:0; padding:0; line-height:1.0;
+    font-size:16px; font-style:normal; font-weight:normal;
+    text-decoration:none;
+}
+th {text-align:left;}
+table,tr,th,td {border-collapse:collapse;}
+ul,ol,li {list-style:none;}
+a {color:#000;}
+input {outline:none; border:0;}
+button {cursor:pointer; border:0;}
+fieldset {border:0;}
+/* HTML 태그에선 의미적으로 존재하나 CSS 디자인 결과에서 숨겨지는 대상 태그에 적용하는 공통 클래스 SKIP */
+.skip {display:none;}
