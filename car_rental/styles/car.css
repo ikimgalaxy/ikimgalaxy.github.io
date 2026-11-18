@@ -122,3 +122,162 @@ footer p {}
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+/* 반응형: 태블릿 및 모바일 */
+@media (max-width: 1354px) {
+  body { min-width: 0; overflow-x: hidden; padding-bottom: 110px; }
+  img { max-width: 100%; height: auto; }
+  .res_form { min-width: 0; height: auto; min-height: 90px; padding: 12px 20px; gap: 10px; flex-wrap: wrap; }
+  .res_form form { flex: 1 1 100%; width: 100%; }
+  .res_form form fieldset { display: flex; width: 100%; gap: 8px; }
+  .res_form form fieldset > input,
+  .res_form form fieldset select { width: auto; min-width: 0; flex: 1 1 0; margin: 0; }
+  .res_form .agree_wrap { flex-flow: row wrap; justify-content: center; gap: 12px; margin: 0 auto; }
+  .res_form .agree_wrap label:first-child { margin: 0; }
+  .res_form .agree_wrap label > span { font-size: 0.9rem; }
+  .res_form > .btn { padding: 12px 24px; }
+
+  #sec1 { height: auto; min-height: 680px; background-position: center; }
+  #sec1 .txt { width: 100%; padding: 120px 6vw 48px; box-sizing: border-box; }
+  #sec1 .txt .top,
+  #sec1 .txt .btm { width: min(100%, 1000px); }
+  #sec1 .txt .top { gap: 24px; padding-top: 0; }
+  #sec1 .txt .top .left,
+  #sec1 .txt .top .right { min-width: 0; }
+  #sec1 .txt img { max-width: 100%; height: auto; }
+
+  #sec2 { height: auto; min-height: 700px; padding: 80px 7vw; background-position: center; }
+  #sec2 .txt { width: min(100%, 760px); margin: 0 auto; padding: 0; }
+  #sec2 .txt img { max-width: 100%; height: auto; }
+  #sec2 .txt img:nth-child(2),
+  #sec2 .txt img:nth-child(3),
+  #sec2 .txt img:nth-child(5) { transform: none; }
+  #sec3 { height: auto; min-height: 300px; padding: 64px 24px; text-align: center; }
+  #sec3 p img { max-width: min(100%, 720px); height: auto; }
+  #sec4 { height: auto; padding: 72px 24px; }
+  #sec4 p img,
+  #sec4 p:nth-child(1) img,
+  #sec4 p:nth-child(2) img,
+  #sec4 p:nth-child(3) img { display: block; width: min(100%, 800px); height: auto; margin: 28px auto 0; }
+
+  #event_wrap { padding: 64px 24px; }
+  #event_wrap div { left: auto; width: min(100%, 1050px); height: auto; margin: 0 auto; transform: none; box-sizing: border-box; background-size: 100% 100%; }
+  #event_wrap div p { font-size: clamp(1.5rem, 4vw, 3.125rem); line-height: 1.35; }
+  #event_wrap div em,
+  #event_wrap div em span { font-size: clamp(1.5rem, 4vw, 3.125rem); line-height: 1.3; }
+  #event_wrap div .reg { font-size: clamp(1rem, 2.4vw, 1.875rem); line-height: 1.5; }
+  #event_wrap div .txt_line { font-size: clamp(1.2rem, 3vw, 2.5rem); line-height: 1.4; }
+  #event_wrap .event1 { min-height: 620px; padding: 32px; }
+  #event_wrap .event1 p:first-child { margin: 80px 0 24px; }
+  #event_wrap .event1 .reg { margin: 24px 0 32px; }
+  #event_wrap .event1 img { width: min(100%, 460px); height: auto; }
+  #event_wrap .event2 { min-height: 580px; margin: 48px auto; padding: 32px; }
+  #event_wrap .event2 em { margin: 80px 0 24px; }
+  #event_wrap .event2 .txt_line { margin: 24px 0 32px; }
+  #event_wrap .event2 img { width: min(100%, 460px); height: auto; }
+  #event_wrap .event3 { min-height: 1000px; padding: 32px; }
+  #event_wrap .event3 em { margin: 80px 0 36px; }
+  #event_wrap .event3 > img { width: 100%; height: auto; }
+  #event_wrap .event3 a { width: min(100%, 800px); margin: 28px auto; padding: 22px 24px; gap: 10px; }
+  #event_wrap .event3 a span { font-size: clamp(1rem, 2.8vw, 2rem); line-height: 1.4; }
+  #event_wrap .event3 a img { width: 32px; height: 32px; flex: 0 0 auto; }
+
+  #inquiry { height: auto; min-height: 700px; background-position: center; }
+  #inquiry .txt { width: min(100% - 48px, 650px); padding: 100px 0; }
+  #inquiry .txt p:nth-child(1) { font-size: clamp(2rem, 4.5vw, 3.5rem); }
+  #inquiry .txt p:nth-child(2) { font-size: clamp(1.4rem, 3.3vw, 2.5rem); margin: 32px 0; }
+  #inquiry .txt div span { font-size: clamp(1rem, 2.5vw, 2rem); }
+  #inquiry .txt .name input { width: min(75%, 500px); min-width: 0; }
+  #inquiry .txt .number .num { display: flex; gap: 8px; min-width: 0; }
+  #inquiry .txt .number .num input { width: min(18vw, 160px); min-width: 0; margin: 0; }
+  #inquiry .txt .agree_wrap label span,
+  #inquiry .txt .agree_wrap a { font-size: 1rem; }
+  #inquiry .txt .btn { max-width: 100%; }
+
+  footer { padding: 24px; }
+  footer p { font-size: 0.9rem; line-height: 1.7; }
+}
+
+@media (max-width: 767px) {
+  body { padding-bottom: 178px; }
+  .res_form { display: flex; flex-direction: column; align-items: stretch; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); }
+  .res_form form fieldset { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .res_form form fieldset > input,
+  .res_form form fieldset select { width: 100%; height: 36px; padding: 0 8px; font-size: 0.75rem; }
+  .res_form form fieldset select { grid-column: 1 / -1; }
+  .res_form .agree_wrap { width: 100%; justify-content: space-between; gap: 6px; }
+  .res_form .agree_wrap label > span { font-size: 0.65rem; }
+  .res_form .agree_wrap label > input { margin-right: 4px; }
+  .res_form > .btn { width: 100%; min-height: 40px; height: 40px; justify-content: center; padding: 8px 16px; }
+  .res_form > .btn span { font-size: 0.9rem; }
+
+  #sec1 { min-height: 620px; }
+  #sec1 .txt { padding: 90px 20px 40px; }
+  #sec1 .txt .top { align-items: flex-start; gap: 8px; }
+  #sec1 .txt .top .left { width: 58%; margin: 0; }
+  #sec1 .txt .top .right { width: 42%; text-align: right; }
+  #sec1 .txt .top .right img { max-width: 100%; }
+  #sec1 .txt .top .right img:nth-child(1) { top: -14px; right: 4px; padding-left: 12px; }
+  #sec1 .txt .btm { margin-top: 12px; }
+
+  #sec2 { min-height: 620px; padding: 64px 20px; }
+  #sec2 .txt { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+  #sec2 .txt img { max-width: 100%; }
+  #sec2 .txt img:nth-child(2),
+  #sec2 .txt img:nth-child(3),
+  #sec2 .txt img:nth-child(5) { transform: none; }
+  #sec3 { min-height: 240px; padding: 48px 18px; }
+  #sec3 p:nth-child(1) { margin-bottom: 20px; }
+  #sec4 { padding: 52px 18px; }
+  #sec4 p:nth-child(1) img,
+  #sec4 p:nth-child(2) img,
+  #sec4 p:nth-child(3) img { width: 100%; margin-top: 22px; }
+
+  #event_wrap { padding: 40px 14px; }
+  #event_wrap .event1,
+  #event_wrap .event2,
+  #event_wrap .event3 { padding: 26px 16px; background-size: 100% 100%; }
+  #event_wrap .event1 { min-height: 480px; }
+  #event_wrap .event1 p:first-child { margin: 46px 0 18px; }
+  #event_wrap .event1 .reg { margin: 18px 0 24px; }
+  #event_wrap .event1 img { width: 100%; }
+  #event_wrap .event2 { min-height: 430px; margin: 32px auto; }
+  #event_wrap .event2 em { margin: 48px 0 18px; }
+  #event_wrap .event2 .txt_line { margin: 18px 0 24px; }
+  #event_wrap .event2 img { width: min(100%, 360px); }
+  #event_wrap .event3 { min-height: 700px; }
+  #event_wrap .event3 em { margin: 48px 0 24px; }
+  #event_wrap .event3 a { padding: 14px 12px; border-radius: 14px; }
+  #event_wrap .event3 a span { font-size: 0.95rem; }
+  #event_wrap .event3 a img { width: 24px; height: 24px; }
+
+  #inquiry { min-height: 0; }
+  #inquiry .txt { width: 100%; padding: 72px 20px; }
+  #inquiry .txt p:nth-child(1) { font-size: 1.8rem; }
+  #inquiry .txt p:nth-child(2) { font-size: 1.25rem; margin: 24px 0; }
+  #inquiry .txt .name,
+  #inquiry .txt .number { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 8px; align-items: center; }
+  #inquiry .txt .name input { width: 100%; height: 38px; }
+  #inquiry .txt .number { margin-top: 14px; }
+  #inquiry .txt .number .num { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+  #inquiry .txt .number .num input { width: 100%; height: 36px; padding: 0 4px; }
+  #inquiry .txt .agree_wrap { margin-top: 22px; text-align: left; }
+  #inquiry .txt .agree_wrap label span,
+  #inquiry .txt .agree_wrap a { font-size: 0.8rem; margin: 0 4px; }
+  #inquiry .txt .btn { width: 100%; left: auto; transform: none; margin: 24px 0 0; }
+
+  footer { padding: 22px 16px; }
+  footer p { font-size: 0.75rem; line-height: 1.6; word-break: keep-all; }
+  footer p br { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #sec1 .txt .top .right img:nth-child(1),
+  #sec2 .txt img:nth-child(2),
+  #sec2 .txt img:nth-child(4),
+  #sec3 p:nth-child(1),
+  #event_wrap .event1 em,
+  #event_wrap .event2 em { animation: none; }
+  #event_wrap .event3 a,
+  .btn { transition: none; }
+}
